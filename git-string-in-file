@@ -1,0 +1,8 @@
+#!/bin/sh
+#
+# git-string-in-file
+#
+# by jasonleonhard
+#
+# print all file names that contain a string in this directory
+git grep $1 | awk -F: '{print $1}'
